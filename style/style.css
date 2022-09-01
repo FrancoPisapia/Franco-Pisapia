@@ -1,0 +1,30 @@
+.position--sticky {
+  position: sticky;
+  top: 0px;
+}
+
+.portada {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  background-image: url(../imagenes/12067353_4884340.jpg);
+  background-size: cover;
+}
+
+h1 {
+  position: absolute;
+  display: inline;
+  color: #fff;
+}
+
+@media screen and (min-width: 992px) {
+  .imagen-lat {
+    display: block;
+    height: 350px;
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
