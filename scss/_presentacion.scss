@@ -1,5 +1,9 @@
 @use "variables" as v;
 
+body{
+    background-color: #BBCDE5;
+}
+
 @media screen and (min-width: 992px) {
 
 .imagen-lat{
@@ -9,4 +13,24 @@
     align-items: center;
     
 }
+}
+
+@each $icono, $imagen in v.$iconos{
+    .#{$icono} li{
+        list-style-image: $imagen;
+    }
+}
+
+.padding-y-marging{
+        margin-left: 1%;
+        padding-left: 4%;
+    }
+
+.list-group-item {
+    display: list-item;
+}
+
+.sep-listas{
+    margin-top: 3%;
+    margin-bottom: 3%;
 }

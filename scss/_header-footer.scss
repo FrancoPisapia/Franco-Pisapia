@@ -1,4 +1,14 @@
 .position--sticky{
     position: sticky;
     top: 0px;
+
+    z-index: 100;
 }
+li{
+    list-style: none;
+  }
+  
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
