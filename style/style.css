@@ -17,6 +17,7 @@ a {
   display: flex;
   height: 100vh;
   align-items: center;
+  justify-content: center;
   background-image: url(../imagenes/12067353_4884340.jpg);
   background-size: cover;
 }
@@ -39,33 +40,35 @@ body {
 @media screen and (min-width: 992px) {
   .imagen-lat {
     display: block;
-    height: 350px;
-    width: 350px;
+    height: 400px;
+    width: 400px;
     justify-content: center;
     align-items: center;
   }
 }
+.proyectos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .estudios li {
   list-style-image: url(../imagenes/degree-hat.svg);
 }
 
 .padding-y-marging {
-  margin-left: 1%;
-  padding-left: 4%;
+  margin-left: 2%;
+  padding-left: 5%;
 }
 
-.list-group-item {
+.list-group-item-modificado {
   display: list-item;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 
 .sep-listas {
   margin-top: 3%;
   margin-bottom: 3%;
-}
-
-.proyectos {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 /*# sourceMappingURL=style.css.map */
