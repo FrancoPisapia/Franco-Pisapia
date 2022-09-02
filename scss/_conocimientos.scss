@@ -1,17 +1,20 @@
 @use 'variables' as v;
 
+.centrado {
+  justify-content: center;
+  align-items: center;
+}
+
+.conocimientos__img-1,
+.conocimientos__img-2 {
+  justify-content: center;
+  align-self: center;
+  justify-self: center;
+}
 @media screen and (min-width: 992px) {
   .conocimientos__img-1,
   .conocimientos__img-2 {
-    display: block;
-    @include v.size(200px, 200px);
     justify-content: center;
     align-items: center;
-  }
-
-  .conocimientos__img-2 {
-    position: relative;
-    left: 40%;
-    top: -20px;
   }
 }
