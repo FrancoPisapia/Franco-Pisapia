@@ -119,4 +119,20 @@ body {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 992px) {
+  .conocimientos__img-1,
+.conocimientos__img-2 {
+    display: block;
+    height: 200px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+  }
+  .conocimientos__img-2 {
+    position: relative;
+    left: 40%;
+    top: -20px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
