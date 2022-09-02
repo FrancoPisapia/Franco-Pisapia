@@ -1,8 +1,9 @@
 @mixin size($width, $height) {
-    height: $height;
-    width: $width;
-  }
+  height: $height;
+  width: $width;
+}
 
-  $iconos:(
-    estudios:url(../imagenes/degree-hat.svg)
-  )
+$iconos: (
+  estudios: url(../imagenes/degree-hat.svg),
+  trabajos: url(../imagenes/round-engineering.svg),
+);

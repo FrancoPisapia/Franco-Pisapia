@@ -13,6 +13,10 @@ a {
   color: inherit;
 }
 
+* {
+  zoom: 100%;
+}
+
 .portada {
   display: flex;
   height: 100vh;
@@ -53,11 +57,33 @@ body {
 
 .estudios li {
   list-style-image: url(../imagenes/degree-hat.svg);
+  list-style-image: url(../imagenes/degree-hat.svg);
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  border: none;
+}
+
+.trabajos li {
+  list-style-image: url(../imagenes/round-engineering.svg);
+  list-style-image: url(../imagenes/round-engineering.svg);
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  border: none;
 }
 
 .padding-y-marging {
   margin-left: 2%;
   padding-left: 5%;
+}
+
+.ul li {
+  list-style-image: none;
 }
 
 .list-group-item-modificado {
@@ -66,9 +92,31 @@ body {
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 
+.list-group-item-modificado-2 {
+  display: list-item;
+  border: none;
+  border-bottom: none;
+  list-style-image: none;
+}
+
+.lista-ultimo {
+  border: none;
+}
+
+.width {
+  max-width: 100%;
+}
+
 .sep-listas {
   margin-top: 3%;
   margin-bottom: 3%;
+}
+
+#estudios {
+  background-color: #fff;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
