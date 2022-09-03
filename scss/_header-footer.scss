@@ -1,3 +1,4 @@
+@use "variables" as v;
 .position--sticky {
   position: sticky;
   top: 0px;
@@ -16,3 +17,34 @@ a {
 * {
   zoom: 100%;
 }
+
+.footer{
+  background-color: v.$color-footer;
+  color: #fff;
+
+  .flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 15px;
+
+
+  }
+  .redes-socales{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 15px;
+    width: 50%;
+  }
+}
+
+.inicio{
+  display: block;
+  width: 100%;
+  }
+
+  form{
+    width: 100%;
+  }
+
