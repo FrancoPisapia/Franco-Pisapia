@@ -3,6 +3,7 @@
 .centrado {
   justify-content: center;
   align-items: center;
+  justify-items: center;
 }
 
 .conocimientos__img-1,
@@ -16,5 +17,7 @@
   .conocimientos__img-2 {
     justify-content: center;
     align-items: center;
+    @include v.size(300px, 300px);
+    justify-self: center;
   }
 }
