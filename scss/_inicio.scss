@@ -1,8 +1,9 @@
 @use "variables" as v;
 
-body{
-  z-index: 2;
+main{
+z-index: 10;
 }
+
 .portada{
   display: flex;
 
@@ -26,18 +27,34 @@ b{
   color:#C2095A ;
 }
 
+@media screen and (min-height: 300px) {
+
+  
+  .bordes{
+    width: 300px ;
+  }
+}
+
 
 @media screen and (min-width: 992px) {
 
+  
+  .bordes{
+    overflow-y: hidden;
+    height: 35vw;
+    overflow: hidden;
+  }
+
   .borde1, .borde2, .borde3, .borde4, .borde5{
 
-    border: 1px solid rgba($color: v.$borde-efecto, $alpha: 0.50);
-    width: 100%;
-    width: inherit;
+    border-bottom: 1px solid rgba($color: v.$borde-efecto, $alpha: 0.50);
+    width: 100% ;
+
     position: absolute;
+    
     left: -50%;
-    top: 100px;
-    margin-top:-15px;
+    // top: 100px;
+    // margin-top:-15px;
   
   
     transform: rotate(125deg);
@@ -60,8 +77,8 @@ b{
   
   
     left: -30%;
-    top: 100px;
-    margin: 0;
+    // top: 100px;
+    // margin: 0;
   
   
     transform: rotate(125deg);
@@ -81,8 +98,8 @@ b{
   
   
       left: -10%;
-      top: 100px;
-      margin: 0;
+      // top: 100px;
+      // margin: 0;
     
     
       transform: rotate(125deg);
@@ -102,8 +119,8 @@ b{
   
   
         left: -40%;
-        top: 100px;
-        margin: 0;
+        // top: 100px;
+        // margin: 0;
       
       
         transform: rotate(125deg);
@@ -123,8 +140,8 @@ b{
   
   
           left: -20%;
-          top: 100px;
-          margin: 0;
+          // top: 100px;
+          // margin: 0;
         
         
           transform: rotate(125deg);
