@@ -1,5 +1,8 @@
-@use "variables";
+@use "variables" as v;
 
+body{
+  z-index: 2;
+}
 .portada{
   display: flex;
 
@@ -8,6 +11,7 @@
   justify-content: center;
   background-image: url(../imagenes/12067353_4884340.jpg);
   background-size: cover;
+  overflow: hidden;
 }
 
 h1{
@@ -15,8 +19,134 @@ h1{
   display: inline;
   color: #FDFFFC;
   text-align: center;
+  z-index: 1;
 }
 
 b{
   color:#C2095A ;
 }
+
+
+@media screen and (min-width: 992px) {
+
+  .borde1, .borde2, .borde3, .borde4, .borde5{
+
+    border: 1px solid rgba($color: v.$borde-efecto, $alpha: 0.50);
+    width: 100%;
+    width: inherit;
+    position: absolute;
+    left: -50%;
+    top: 100px;
+    margin-top:-15px;
+  
+  
+    transform: rotate(125deg);
+    animation-name: efecto-1;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+  }
+  
+  @keyframes efecto-1{
+    50%{left:  -20%;
+    }
+    100%{left:  -50%;
+  
+    }
+    }
+  
+  
+  .borde2{
+  
+  
+    left: -30%;
+    top: 100px;
+    margin: 0;
+  
+  
+    transform: rotate(125deg);
+    animation-name: efecto-2;
+    animation-duration: 10s;
+  }
+  
+  @keyframes efecto-2{
+    50%{left:  0%;
+    }
+    100%{left:  -30%;
+  
+    }
+    }
+  
+    .borde3{
+  
+  
+      left: -10%;
+      top: 100px;
+      margin: 0;
+    
+    
+      transform: rotate(125deg);
+      animation-name: efecto-3;
+      animation-duration: 10s;
+    }
+    
+    @keyframes efecto-3{
+      50%{left:  20%;
+      }
+      100%{left:  -10%;
+    
+      }
+      }
+  
+      .borde4{
+  
+  
+        left: -40%;
+        top: 100px;
+        margin: 0;
+      
+      
+        transform: rotate(125deg);
+        animation-name: efecto-4;
+        animation-duration: 10s;
+      }
+      
+      @keyframes efecto-4{
+        50%{left:  -10%;
+        }
+        100%{left:  -40%;
+      
+        }
+        }
+    
+        .borde5{
+  
+  
+          left: -20%;
+          top: 100px;
+          margin: 0;
+        
+        
+          transform: rotate(125deg);
+          animation-name: efecto-5;
+          animation-duration: 10s;
+        }
+        
+        @keyframes efecto-5{
+          50%{left:  10%;
+          }
+          100%{left:  -20%;
+        
+          }
+          }
+      
+  }
+  
+
+
+    
+
+
+
+
+
