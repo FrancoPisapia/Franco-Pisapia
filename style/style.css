@@ -17,33 +17,41 @@ a {
   zoom: 100%;
 }
 
+/* FOOTTER */
 .footer {
-  background-color: #1c5d99;
-  color: #fff;
-}
-.footer .flex {
   display: flex;
-  flex-direction: row;
-  justify-content: start;
-  gap: 15px;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-content: center;
 }
-.footer .redes-socales {
+
+.centrado {
   display: flex;
+  justify-self: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.form-ancho {
+  width: 80%;
+}
+
+.redes-sociales {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
   flex-direction: row;
-  justify-content: flex-end;
-  gap: 15px;
-  width: 50%;
+  gap: 50px;
+  margin-top: 20px;
 }
 
-.inicio {
-  display: block;
-  width: 100%;
+/*  Desktop*/
+@media screen and (min-width: 992px) {
+  .form-ancho {
+    width: 40%;
+  }
 }
-
-form {
-  width: 100%;
-}
-
 .portada {
   display: flex;
   height: 100vh;

@@ -18,33 +18,39 @@ a {
   zoom: 100%;
 }
 
-.footer{
-  background-color: v.$color-footer;
-  color: #fff;
+/* FOOTTER */
 
-  .flex{
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    gap: 15px;
-
-
-  }
-  .redes-socales{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    gap: 15px;
-    width: 50%;
-  }
+.footer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-content: center;
+}
+.centrado {
+  display: flex;
+  justify-self: center;
+  text-align: center;
+  gap: 20px;
 }
 
-.inicio{
-  display: block;
-  width: 100%;
-  }
+.form-ancho {
+  width: 80%;
+}
 
-  form{
-    width: 100%;
-  }
+.redes-sociales {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  flex-direction: row;
+  gap: 50px;
+  margin-top: 20px;
+}
 
+/*  Desktop*/
+
+@media screen and (min-width: 992px) {
+  .form-ancho {
+    width: 40%;
+  }
+}
