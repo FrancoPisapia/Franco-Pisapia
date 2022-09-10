@@ -17,19 +17,34 @@ a {
 * {
   zoom: 100%;
 }
-
+.nav-modificado {
+  background-color: rgb(105, 161, 151);
+  color: #160c28;
+}
+#presentacion {
+  margin-top: 50px;
+}
+.mod-p-s {
+  top: 55px;
+  background-color: v.$color-fondo;
+  margin: 0;
+  z-index: 50;
+}
 /* FOOTTER */
 
 .footer {
+  background-color: v.$color-footer;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   height: 100vh;
   justify-content: center;
   align-content: center;
+  margin-top: 20px;
 }
 .centrado {
   display: flex;
-  justify-self: center;
+  justify-content: center;
   text-align: center;
   gap: 20px;
 }
@@ -45,6 +60,19 @@ a {
   flex-direction: row;
   gap: 50px;
   margin-top: 20px;
+}
+
+.block {
+  display: flex;
+  justify-content: center;
+
+  @include v.size(60px, 60px);
+  background-color: #e31b6d;
+}
+
+.modif-boton {
+  border: 1px solid rgb(105, 161, 151);
+  background-color: rgb(22, 12, 40);
 }
 
 /*  Desktop*/

@@ -1,23 +1,30 @@
 @use "variables" as v;
 
-#presentacion{
-z-index: 100;
+#presentacion {
+  z-index: 100;
 }
-body{
-    background-color: #BBCDE5;
-    color: #222222;
-    z-index: 2;
+body {
+  background-color: v.$color-fondo;
+  color: #222222;
+  z-index: 2;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.imagen-lat {
+  @include v.size(350px, 350px);
+  margin-bottom: 30px;
+  justify-self: center;
+  align-self: center;
 }
 
 @media screen and (min-width: 992px) {
-
-.imagen-lat{
-    display: block;
-    @include v.size(400px, 400px);
+  .imagen-lat {
+    @include v.size(350px, 320px);
     justify-content: center;
     align-items: center;
-    
+  }
 }
-}
-
-

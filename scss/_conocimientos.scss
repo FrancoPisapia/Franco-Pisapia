@@ -1,9 +1,12 @@
 @use 'variables' as v;
 
-.centrado {
+.centrado-2 {
   justify-content: center;
   align-items: center;
   justify-items: center;
+}
+.negrita {
+  font-weight: bold;
 }
 
 .conocimientos__img-1,
@@ -17,7 +20,7 @@
   .conocimientos__img-2 {
     justify-content: center;
     align-items: center;
-    @include v.size(300px, 300px);
+    @include v.size(350px, auto);
     justify-self: center;
   }
 }

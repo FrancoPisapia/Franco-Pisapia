@@ -1,6 +1,14 @@
+#proyectos {
+  margin: 10px auto 10px auto;
+}
+
 .proyectos {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 20px;
+}
+
+.color-fondo {
+  background-color: #ffffff;
 }

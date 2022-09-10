@@ -13,6 +13,10 @@
   }
 }
 
+.card {
+  background-color: v.$color-fondo;
+}
+
 .padding-y-marging {
   margin-left: 2%;
   padding-left: 5%;
@@ -26,6 +30,7 @@
   display: list-item;
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: v.$color-fondo;
 }
 
 .list-group-item-modificado-2 {
@@ -33,6 +38,7 @@
   border: none;
   border-bottom: none;
   list-style-image: none;
+  background-color: v.$color-fondo;
 }
 
 .lista-ultimo {
@@ -49,7 +55,6 @@
 }
 
 #estudios {
-  background-color: #fff;
   width: 100%;
   margin: 0;
   margin-bottom: 20px;
