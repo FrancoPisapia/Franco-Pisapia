@@ -17,54 +17,93 @@ a {
   zoom: 100%;
 }
 
+.nav-modificado {
+  background-color: rgb(105, 161, 151);
+  color: #160c28;
+}
+
+#presentacion {
+  margin-top: 50px;
+}
+
+.mod-p-s {
+  top: 55px;
+  background-color: #f7eeeb;
+  margin: 0;
+  z-index: 50;
+}
+
+/* FOOTTER */
 .footer {
-  background-color: #1c5d99;
-  color: #fff;
-}
-.footer .flex {
+  background-color: #160c28;
+  color: #ffffff;
   display: flex;
-  flex-direction: row;
-  justify-content: start;
-  gap: 15px;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-content: center;
+  margin-top: 20px;
 }
-.footer .redes-socales {
+
+.centrado {
   display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.form-ancho {
+  width: 80%;
+}
+
+.redes-sociales {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
   flex-direction: row;
-  justify-content: flex-end;
-  gap: 15px;
-  width: 50%;
+  gap: 50px;
+  margin-top: 20px;
 }
 
-.inicio {
-  display: block;
-  width: 100%;
+.block {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  width: 60px;
+  background-color: #e31b6d;
 }
 
-form {
-  width: 100%;
+.modif-boton {
+  border: 1px solid rgb(105, 161, 151);
+  background-color: rgb(22, 12, 40);
 }
 
+/*  Desktop*/
+@media screen and (min-width: 992px) {
+  .form-ancho {
+    width: 40%;
+  }
+}
 .portada {
   display: flex;
   height: 100vh;
   align-items: center;
   justify-content: center;
-  background-image: url(../imagenes/12067353_4884340.jpg);
-  background-size: cover;
+  background-image: linear-gradient(0deg, rgb(105, 161, 151) 0%, rgb(50, 63, 78) 44%, rgb(22, 12, 40) 94%);
   overflow: hidden;
 }
 
 h1 {
   position: absolute;
   display: inline;
-  color: #FDFFFC;
+  color: #fdfffc;
   text-align: center;
   z-index: 1;
   position: relative;
 }
 
 b {
-  color: #C2095A;
+  color: #edafb8;
   display: inline-block;
   width: 100%;
 }
@@ -80,7 +119,7 @@ b {
 }
 
 .efecto-1:hover {
-  background-color: yellow;
+  background-color: rgba(0, 0, 139, 0.5);
   display: block;
   width: 100%;
   animation-name: fondo-nombre;
@@ -103,27 +142,32 @@ b {
 }
 
 body {
-  background-color: #BBCDE5;
+  background-color: #f7eeeb;
   color: #222222;
   z-index: 2;
 }
 
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.imagen-lat {
+  height: 350px;
+  width: 350px;
+  margin-bottom: 30px;
+  justify-self: center;
+  align-self: center;
+}
+
 @media screen and (min-width: 992px) {
   .imagen-lat {
-    display: block;
-    height: 400px;
-    width: 400px;
+    height: 320px;
+    width: 350px;
     justify-content: center;
     align-items: center;
   }
 }
-.proyectos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 20px;
-}
-
 .estudios li {
   list-style-image: url(../imagenes/degree-hat.svg);
   list-style-image: url(../imagenes/degree-hat.svg);
@@ -146,6 +190,10 @@ body {
   border: none;
 }
 
+.card {
+  background-color: #f7eeeb;
+}
+
 .padding-y-marging {
   margin-left: 2%;
   padding-left: 5%;
@@ -159,6 +207,7 @@ body {
   display: list-item;
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: #f7eeeb;
 }
 
 .list-group-item-modificado-2 {
@@ -166,6 +215,7 @@ body {
   border: none;
   border-bottom: none;
   list-style-image: none;
+  background-color: #f7eeeb;
 }
 
 .lista-ultimo {
@@ -182,16 +232,34 @@ body {
 }
 
 #estudios {
-  background-color: #fff;
   width: 100%;
   margin: 0;
   margin-bottom: 20px;
 }
 
-.centrado {
+#proyectos {
+  margin: 10px auto 10px auto;
+}
+
+.proyectos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.color-fondo {
+  background-color: #ffffff;
+}
+
+.centrado-2 {
   justify-content: center;
   align-items: center;
   justify-items: center;
+}
+
+.negrita {
+  font-weight: bold;
 }
 
 .conocimientos__img-1,
@@ -206,10 +274,13 @@ body {
 .conocimientos__img-2 {
     justify-content: center;
     align-items: center;
-    height: 300px;
-    width: 300px;
+    height: auto;
+    width: 350px;
     justify-self: center;
   }
+}
+#objetivo-profesional {
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

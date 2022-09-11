@@ -17,34 +17,68 @@ a {
 * {
   zoom: 100%;
 }
+.nav-modificado {
+  background-color: rgb(105, 161, 151);
+  color: #160c28;
+}
+#presentacion {
+  margin-top: 50px;
+}
+.mod-p-s {
+  top: 55px;
+  background-color: v.$color-fondo;
+  margin: 0;
+  z-index: 50;
+}
+/* FOOTTER */
 
-.footer{
+.footer {
   background-color: v.$color-footer;
-  color: #fff;
-
-  .flex{
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    gap: 15px;
-
-
-  }
-  .redes-socales{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    gap: 15px;
-    width: 50%;
-  }
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-content: center;
+  margin-top: 20px;
+}
+.centrado {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
 }
 
-.inicio{
-  display: block;
-  width: 100%;
-  }
+.form-ancho {
+  width: 80%;
+}
 
-  form{
-    width: 100%;
-  }
+.redes-sociales {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  flex-direction: row;
+  gap: 50px;
+  margin-top: 20px;
+}
 
+.block {
+  display: flex;
+  justify-content: center;
+
+  @include v.size(60px, 60px);
+  background-color: #e31b6d;
+}
+
+.modif-boton {
+  border: 1px solid rgb(105, 161, 151);
+  background-color: rgb(22, 12, 40);
+}
+
+/*  Desktop*/
+
+@media screen and (min-width: 992px) {
+  .form-ancho {
+    width: 40%;
+  }
+}

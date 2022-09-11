@@ -1,66 +1,68 @@
 @use "variables" as v;
 
-
-
-.portada{
+.portada {
   display: flex;
 
   height: 100vh;
   align-items: center;
   justify-content: center;
-  background-image: url(../imagenes/12067353_4884340.jpg);
-  background-size: cover;
+  background-image: linear-gradient(
+    0deg,
+    rgba(105, 161, 151, 1) 0%,
+    rgba(50, 63, 78, 1) 44%,
+    rgba(22, 12, 40, 1) 94%
+  );
+  // background-image: url(../imagenes/Abstract.jpg);
+  // background-size: cover;
   overflow: hidden;
 }
 
-h1{
+h1 {
   position: absolute;
   display: inline;
-  color: #FDFFFC;
+  color: #fdfffc;
   text-align: center;
   z-index: 1;
   position: relative;
 }
 
-b{
-  color:#C2095A ;
+b {
+  color: #edafb8;
   display: inline-block;
   width: 100%;
-
 }
-.contenedor-efecto-1{
+.contenedor-efecto-1 {
   display: inline-block;
   position: relative;
 }
-.efecto-1{
+.efecto-1 {
   display: inline-block;
-  position: relative
+  position: relative;
 }
 
+.efecto-1:hover {
+  background-color: rgba($color: darkblue, $alpha: 0.5);
+  display: block;
+  width: 100%;
 
-    .efecto-1:hover{
-    background-color: yellow;
-    display: block;
+  animation-name: fondo-nombre;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  text-align: left;
+}
+
+@keyframes fondo-nombre {
+  0% {
+    width: 0%;
+  }
+  50% {
     width: 100%;
-
-    animation-name: fondo-nombre;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    text-align: left;
   }
-
-  @keyframes fondo-nombre{
-    0%{width: 0%;}
-    50%{width: 100%}
-  }
-
-
-
+}
 
 /* TRANSISICION DESKTOP*/
 // @media screen and (min-width: 992px) {
 
-  
 //   .bordes{
 //     overflow-y: hidden;
 //     height: 35vw;
@@ -73,116 +75,100 @@ b{
 //     width: 180vh ;
 
 //     position: absolute;
-    
+
 //     left: -50%;
 //     // top: 100px;
 //     // margin-top:-15px;
-  
-  
+
 //     transform: rotate(125deg);
 //     animation-name: efecto-1;
 //     animation-timing-function: ease-in-out;
 //     animation-iteration-count: infinite;
 //     animation-duration: 10s;
 //   }
-  
+
 //   @keyframes efecto-1{
 //     50%{left:  -20%;
 //     }
 //     100%{left:  -50%;
-  
+
 //     }
 //     }
-  
-  
+
 //   .borde2{
-  
-  
+
 //     left: -30%;
 //     // top: 100px;
 //     // margin: 0;
-  
-  
+
 //     transform: rotate(125deg);
 //     animation-name: efecto-2;
 //     animation-duration: 10s;
 //   }
-  
+
 //   @keyframes efecto-2{
 //     50%{left:  0%;
 //     }
 //     100%{left:  -30%;
-  
+
 //     }
 //     }
-  
+
 //     .borde3{
-  
-  
+
 //       left: -10%;
 //       // top: 100px;
 //       // margin: 0;
-    
-    
+
 //       transform: rotate(125deg);
 //       animation-name: efecto-3;
 //       animation-duration: 10s;
 //     }
-    
+
 //     @keyframes efecto-3{
 //       50%{left:  20%;
 //       }
 //       100%{left:  -10%;
-    
+
 //       }
 //       }
-  
+
 //       .borde4{
-  
-  
+
 //         left: -40%;
 //         // top: 100px;
 //         // margin: 0;
-      
-      
+
 //         transform: rotate(125deg);
 //         animation-name: efecto-4;
 //         animation-duration: 10s;
 //       }
-      
+
 //       @keyframes efecto-4{
 //         50%{left:  -10%;
 //         }
 //         100%{left:  -40%;
-      
+
 //         }
 //         }
-    
+
 //         .borde5{
-  
-  
+
 //           left: -20%;
 //           // top: 100px;
 //           // margin: 0;
-        
-        
+
 //           transform: rotate(125deg);
 //           animation-name: efecto-5;
 //           animation-duration: 10s;
 //         }
-        
+
 //         @keyframes efecto-5{
 //           50%{left:  10%;
 //           }
 //           100%{left:  -20%;
-        
+
 //           }
 //           }
-      
+
 //   }
-  
-
-
-
-
-
