@@ -114,29 +114,42 @@ b {
 }
 
 .efecto-1 {
-  display: inline-block;
-  position: relative;
-}
-
-.efecto-1:hover {
-  background-color: rgba(0, 0, 139, 0.5);
   display: block;
   width: 100%;
   animation-name: fondo-nombre;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
+  animation-iteration-count: initial;
   text-align: left;
+  background-color: rgba(0, 0, 139, 0.5);
 }
 
+@media screen and (min-width: 992px) {
+  .efecto-1 {
+    animation-name: none;
+    display: inline-block;
+    position: relative;
+    background-color: inherit;
+  }
+  .efecto-1:hover {
+    background-color: rgba(0, 0, 139, 0.5);
+    display: block;
+    width: 100%;
+    animation-name: fondo-nombre;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    text-align: left;
+  }
+}
 @keyframes fondo-nombre {
   0% {
     width: 0%;
   }
   50% {
     width: 100%;
+    background-color: rgba(0, 0, 139, 0.5);
   }
 }
-/* TRANSISICION DESKTOP*/
 #presentacion {
   z-index: 100;
 }
